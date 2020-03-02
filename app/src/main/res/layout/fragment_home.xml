@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.HomeFragment">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:text="@string/title_name"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_talento"
+            android:layout_width="@dimen/icon_square_side_size"
+            android:layout_height="0dp"
+            android:contentDescription="@string/desc_iv_talento"
+            android:onClick="apagar"
+            android:src="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@id/iv_classe"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/tv_label_talento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_talento"
+            app:layout_constraintEnd_toEndOf="@id/iv_talento"
+            app:layout_constraintStart_toStartOf="@id/iv_talento"
+            app:layout_constraintTop_toBottomOf="@id/iv_talento" />
+
+        <ImageView
+            android:id="@+id/iv_magia"
+            android:layout_width="@dimen/icon_square_side_size"
+            android:layout_height="0dp"
+            android:contentDescription="@string/desc_iv_magia"
+            android:onClick="apagar"
+            android:src="@color/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@id/iv_raca"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+
+        <TextView
+            android:id="@+id/tv_label_magia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_magia"
+            app:layout_constraintEnd_toEndOf="@id/iv_magia"
+            app:layout_constraintStart_toStartOf="@id/iv_magia"
+            app:layout_constraintTop_toBottomOf="@id/iv_magia" />
+
+
+        <ImageView
+            android:id="@+id/iv_classe"
+            android:layout_width="@dimen/icon_square_side_size"
+            android:layout_height="0dp"
+            android:contentDescription="@string/desc_iv_classe"
+            android:onClick="apagar"
+            android:src="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/iv_talento" />
+
+        <TextView
+            android:id="@+id/tv_label_classe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_classe"
+            app:layout_constraintEnd_toEndOf="@id/iv_classe"
+            app:layout_constraintStart_toStartOf="@id/iv_classe"
+            app:layout_constraintTop_toBottomOf="@id/iv_classe" />
+
+        <ImageView
+            android:id="@+id/iv_raca"
+            android:layout_width="@dimen/icon_square_side_size"
+            android:layout_height="0dp"
+            android:contentDescription="@string/desc_iv_raca"
+            android:onClick="apagar"
+            android:src="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/iv_magia" />
+
+
+        <TextView
+            android:id="@+id/tv_label_raca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_raca"
+            app:layout_constraintEnd_toEndOf="@id/iv_raca"
+            app:layout_constraintStart_toStartOf="@id/iv_raca"
+            app:layout_constraintTop_toBottomOf="@id/iv_raca" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

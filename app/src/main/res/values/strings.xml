@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FichaTormentaMobile</string>
+    <string name="title_name">Biblioteca Tormenta</string>
+    <string name="desc_iv_talento">Botão Talento</string>
+    <string name="desc_iv_magia">Botão Magia</string>
+    <string name="desc_iv_classe">Botão Classe</string>
+    <string name="desc_iv_raca">Botão Raça</string>
+    <string name="label_talento">Talento</string>
+    <string name="label_magia">Magia</string>
+    <string name="label_classe">Classe</string>
+    <string name="label_raca">Raca</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="visualizar">Visualizar</string>
+</resources>

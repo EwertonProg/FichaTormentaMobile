@@ -1,0 +1,8 @@
+query talento($id: Int!){
+	talento(id: $id){
+		nome,
+		grupoTalento{nome},
+		origem{nome}
+	}
+
+}

@@ -1,0 +1,8 @@
+query talentos{
+	talentos{
+		id,
+		nome,
+		preRequisito,
+		beneficio
+	}
+}
