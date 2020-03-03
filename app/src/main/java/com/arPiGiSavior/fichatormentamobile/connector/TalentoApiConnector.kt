@@ -6,7 +6,7 @@ import okhttp3.OkHttpClient
 class TalentoApiConnector {
 
     companion object {
-        val URL = "http://192.168.0.106:8080/graphql"
+        val URL = "https://radiant-depths-67651.herokuapp.com/graphql"
 
         fun setupConnection(): ApolloClient {
             val okHttpClient = OkHttpClient.Builder().build()
